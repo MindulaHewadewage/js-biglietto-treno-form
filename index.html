@@ -23,22 +23,58 @@
                     <div class="row row-cols-md-3">
                         <div class="col mb-3">
                             <label for="name" class="form-label">Nome passeggero</label>
-                            <input type="text" class="form-control" id="name">
+                            <input type="text" minlength="2" class="form-control" id="name">
                         </div>
 
                         <div class="col mb-3">
                             <label for="kms" class="form-label">Kilometri</label>
-                            <input type="number" class="form-control" id="kms">
+                            <input type="number" min="10" class="form-control" id="kms">
                         </div>
 
                         <div class="col mb-3">
                             <label for="name" class="form-label">Età passeggero</label>
                             <select class="form-select" aria-label="Default select example" id="age">
                                 <option selected></option>
-                                <option value="1">Adulto</option>
-                                <option value="2">Minorenne</option>
-                                <option value="3">Over 65</option>
+                                <option value="adulto">Adulto</option>
+                                <option value="under">Minorenne</option>
+                                <option value="over">Over 65</option>
                               </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="ticket">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Il tuo biglietto</h5>
+                    <hr>
+                    <div class="row row-cols-md-5">
+                        <div class="col mb-3">
+                            <h5>Nome Cognome</h5>
+                            <div id="passenger-name">Mindu</div>
+                        </div>
+
+                        <div class="col mb-3">
+                            <h5>Tariffa</h5>
+                            <div id="rate">Tariffa ordinaria</div>
+                        </div>
+
+                        <div class="col mb-3">
+                            <h5>Carrozza</h5>
+                            <div id="coach">Mindu</div>
+                        </div>
+
+                        <div class="col mb-3">
+                            <h5>PNR</h5>
+                            <div id="pnr">94555</div>
+                        </div>
+
+                        <div class="col mb-3">
+                            <h5>Prezzo</h5>
+                            <div id="price">21</div>
                         </div>
                     </div>
                 </div>
