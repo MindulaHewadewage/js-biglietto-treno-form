@@ -13,23 +13,37 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- <h1 id="total"></h1>
-    <del id="original-price"></del>
-    <strong id="discount-message"></strong> -->
+    <main class="container">
+        <!-- Sezione Form -->
+        <section id="form-section" class="my-5">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Inserisci i dati</h5>
+                    <hr>
+                    <div class="row row-cols-md-3">
+                        <div class="col mb-3">
+                            <label for="name" class="form-label">Nome passeggero</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
 
+                        <div class="col mb-3">
+                            <label for="kms" class="form-label">Kilometri</label>
+                            <input type="number" class="form-control" id="kms">
+                        </div>
 
-    <div id="passenger-name">
-        <input type="text" id="input" >
-    </div>
-
-    <div id="trip-lenght">
-        <input type="number" id="input" >
-    </div>
-
-    <div id="user-age">
-        <input type="number" id="input" >
-    </div>
-
-    <button id="button">Genera</button>
+                        <div class="col mb-3">
+                            <label for="name" class="form-label">Età passeggero</label>
+                            <select class="form-select" aria-label="Default select example" id="age">
+                                <option selected></option>
+                                <option value="1">Adulto</option>
+                                <option value="2">Minorenne</option>
+                                <option value="3">Over 65</option>
+                              </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
