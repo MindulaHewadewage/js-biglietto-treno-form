@@ -6,8 +6,8 @@ const cancelButton = document.getElementById('cancel');
 const continueButton = document.getElementById('continue');
 
 // Prendo elementi biglietto
-const ticketSection = document.getElementById('ticket')
-const nameElement = document.getElementById('Element');
+const ticketSection = document.getElementById('ticket-section')
+const nameElement = document.getElementById('name-element');
 const rateElement = document.getElementById('rate');
 const coachElement = document.getElementById('coach');
 const pnrElement = document.getElementById('pnr');
@@ -45,19 +45,30 @@ continueButton.addEventListener('click' , function(){
 
 
     // arrotondo a due decimali
-
     price = '€' + price.toFixed(2);
     console.log(price);
 
 
-    
+    // carrozza
+    const coach = '9';
+    const pnr = '98229';
 
+    // riempio tutti i punti coi valori corretti
+    nameElement.inner = nameValue; 
+    rateElement.innerText = rateName; 
+    coachElement.innerText = coach; 
+    pnrElement.innerText = pnr; 
+    priceElement.innerText = price; 
+
+
+    // mostro il biglietto(rimuovo d-none)
+    ticketSection.classList.remove('d-none');
 })
 
 
 
-// riempio tutti i punti coi valori corretti
 
-// mostro il biglietto(rimuovo d-none)
+
+
 
 
