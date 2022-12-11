@@ -20,6 +20,8 @@ continueButton.addEventListener('click' , function(){
     const kmsValue = tripLenght.value;
     const ageValue = userAge.value;
 
+    console.log(nameValue, kmsValue, ageValue);
+
     // validazione
 
     if(!nameValue || isNaN(kmsValue)){
@@ -34,22 +36,25 @@ continueButton.addEventListener('click' , function(){
 
     // verifico se devo applicare sconti
     if (ageValue === 'under'){
-        price = 0.8;
+        price *= 0.8;
         rateName = 'Tariffa Giovani'
-
-
+    } else if (ageValue === 'over'){
+        price *= 0.6;
+        rateName = 'tariffa anziani';
     }
+
+
+    // arrotondo a due decimali
+
+    price = '€' + price.toFixed(2);
+    console.log(price);
+
+
+    
+
 })
 
 
-
-
-
-
-
-// arrotondo a due decimali
-
-// svuoto i campi
 
 // riempio tutti i punti coi valori corretti
 
